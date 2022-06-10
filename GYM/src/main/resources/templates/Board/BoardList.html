@@ -29,7 +29,7 @@
 
 </tr>
 
-<tr th:each="list : ${boardlist}">
+<tr th:each="list : ${boardList}">
 <td th:text="${list.boardNo}"></td>
 <td><a th:href="@{BoardView(boardNo=${list.boardNo})}" th:text="${list.boardTitle}"></a></td>
 <td th:text="${list.boardWriter}"></td>
@@ -44,7 +44,7 @@
 </table>
 
 
-<button onclick = 'location.href = "BoardRegistForm"'>게시글 작성</button>
+<button onclick = "location.href = 'boardRegistForm'">게시글 작성</button>
 <button onclick ="history.back(-1);">뒤로가기</button>
 
 

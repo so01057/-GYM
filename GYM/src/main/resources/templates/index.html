@@ -52,6 +52,8 @@
 
 
 
+
+
 <button onclick = 'location.href = "trainingPlanList"'>견적서 페이지 이동</button>
 <button onclick = 'location.href = "boardList"'>게시판 페이지 이동</button>
 <button onclick = 'location.href = "companyList"'>기업 페이지 이동</button>
@@ -69,42 +71,37 @@
 
 
 
+
+
+
+
+
+
+
+ <button class="btn-open-popup">로그인하기모달</button>
+
+
+
+
+
 <div class="modal">
       <div class="modal_body">
       <h1>기업회원 회원가입</h1>
 
 
-<form action = "memberRegist" method = "POST" enctype = "multipart/form-data">
+<h1>회원 로그인</h1>
 
+<form action = "memberSignIn" method = "POST">
+ID : <input type = "text" name = "memberId"> <br/>
+PW : <input type = "password" name = "memberPw"> <br/>
 
-<input type = "hidden" name = "memberRole" value = "Enterprise">
-
-
-이름 : <input type = "text" name = "memberName"/> <br/>
-아이디 : <input type = "text" name = "memberId"/> <br/>
-비밀번호 : <input type = "password" name = "memberPw"/> <br/>
-우편번호 : <input type = "text" id = "sample6_postcode" placeholder = "우편번호" name = "addr1"/> 
-		<input type = "button" onclick="sample6_execDaumPostcode()" value = "우편번호 찾기"><br/>
-주소 : <input type = "text" id = "sample6_address" placeholder="주소" name = "addr2"/> <br/>
-상세주소 : <input type = "text" id = "sample6_detailAddress" placeholder= "상세주소" name = "addr3"/> <br/>
-
-연락처 : <input type = "text" name = "memberPhone"/> <br/>
-성별 : <input type = "radio" name = "memberGender" value = "남"/>남
-<input type = "radio" name = "memberGender" value = "여"/>여 <br/>
-생년월일 : <input type = "date" name = "memberBirth"/> <br/>
-키 : <input type = "text" name = "memberHeight"/> <br/>
-몸무게 : <input type = "text" name = "memberWeight"/> <br/>
-기업명 : <input type = "text" name = "memberCompanyName"> <br/>
-프로필사진 첨부 : <input type = "file" name = "memberProfile"/> <br/>
-
-
-<input type = "submit" value = "등록"/>
+<input type = "submit" value = "로그인">
 </form>
 </div>
 </div>
 </body>
       
-    <button class="btn-open-popup">회원가입(기업)</button>
+   
     
     <script>
       const body = document.querySelector('body');
@@ -129,6 +126,7 @@
         }
       });
     </script>
+
 
 
 

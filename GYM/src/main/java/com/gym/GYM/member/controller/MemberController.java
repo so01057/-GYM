@@ -44,11 +44,6 @@ public class MemberController {
 		return "SignUp/NormalMemberRegistForm";
 	}
 	
-	//로그인페이지 이동 : memberSignIn
-	@GetMapping("/memberSignIn")
-	public String memberSignIn() {
-		return "SignIn/MemberSignInForm";
-	}
 	
 	//회원가입(기업/일반) 메소드 : memberRegist
 	@PostMapping("/memberRegist")
